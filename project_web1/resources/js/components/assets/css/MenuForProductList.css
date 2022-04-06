@@ -1,0 +1,325 @@
+.controls-wrapper {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+.controls-wrapper .controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.controls .range-options-wrapper {
+    display: inline-flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.controls .sort-options-wrapper {
+    position: relative;
+}
+
+/* Price range */
+
+.controls .range-options-wrapper .priceRange-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+    position: relative;
+}
+
+.controls .sort-options-wrapper .sort-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.controls .range-options-wrapper .priceRange-options--left {
+    margin-right: 10px;
+}
+
+.controls .range-options-wrapper .priceRange-options--left .title {
+    font-weight: bold;
+    color: #294d6a;
+}
+
+.controls .range-options-wrapper .priceRange-options--right .label {
+    display: inline-block;
+    width: 35px;
+    min-width: 35px;
+}
+
+.controls .range-options-wrapper .priceRange-options--right .label-icon {
+    font-size: 10px;
+    margin: 0 5px;
+}
+
+.controls .range-options-wrapper .priceRange-options--right .unit-of-price {
+    display: inline-block;
+    width: 12px;
+    margin-left: 5px;
+}
+
+.controls .range-options-wrapper .priceRange-options--right .current-option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 3px 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #d9d9d9;
+    border-radius: 2px;
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.controls .range-options-wrapper .priceRange-options--right .current-option:hover {
+    color: #294d6a;
+    border-color: #294d6a;
+}
+
+.controls .range-options-wrapper .priceRange-options--right #checkbox-for-priceRangeMenu {
+    display: none;
+}
+
+.controls .range-options-wrapper .priceRange-options--right .priceRange-menu {
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    padding: 10px;
+    border-radius: 2px;
+    box-shadow: 0 3px 6px -4px rgb(0 0 0 / 12%), 0 6px 16px 0 rgb(0 0 0 / 8%), 0 9px 28px 8px rgb(0 0 0 / 5%);
+    z-index: 50;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(15px);
+    transition: all 0.2s ease;
+}
+
+.controls .range-options-wrapper .priceRange-options--right #checkbox-for-priceRangeMenu:checked ~ .menu-overlay {
+    display: block;
+}
+
+.controls .range-options-wrapper .priceRange-options--right #checkbox-for-priceRangeMenu:checked ~ .priceRange-menu {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.controls .range-options-wrapper .priceRange-options--right .priceRange-menu .priceRange--from,
+.controls .range-options-wrapper .priceRange-options--right .priceRange-menu .priceRange--to {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls .range-options-wrapper .priceRange-options--right .priceRange-menu .priceRange--from {
+    margin-bottom: 5px;
+}
+
+.controls .range-options-wrapper .priceRange-options--right .priceRange-menu .priceRange--to {
+    margin-bottom: 5px;
+}
+
+.controls .range-options-wrapper .priceRange-options--right .priceRange-menu .input-price {
+    width: 100%;
+}
+
+.controls .sort-options-wrapper .title {
+    font-weight: bold;
+    color: #294d6a;
+    margin-right: 10px;
+}
+
+.controls .range-options-wrapper .priceRange-options--right .priceRange-menu .priceRange-menu__btns {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.controls .range-options-wrapper .priceRange-options--right .priceRange-menu .priceRange-menu__btn {
+    margin-right: 5px;
+}
+
+.controls .range-options-wrapper .priceRange-options--right .priceRange-menu .priceRange-menu__btn:last-child {
+    margin-right: 0px;
+}
+
+.controls .range-options-wrapper .priceRange-options--right .priceRange-menu .priceRange-menu__btns .submit-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls .range-options-wrapper .priceRange-options--right .priceRange-menu .priceRange-menu__btns .submit-btn .ant-btn-loading-icon {
+    line-height: 0;
+}
+
+/* Rating range */
+.ratingRange-options .ant-dropdown-link {
+    margin: 10px 0;
+    line-height: 10px;
+    cursor: pointer;
+}
+
+.controls .range-options-wrapper .ratingRange-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.controls .range-options-wrapper .ratingRange-options .ratingRange-options--left {
+    margin-right: 10px;
+}
+
+.controls .range-options-wrapper .ratingRange-options .ratingRange-options--left .title {
+    font-weight: bold;
+    color: #294d6a;
+}
+
+.controls .range-options-wrapper .ratingRange-options .ratingRange-options--right .label {
+    display: inline-block;
+    width: 35px;
+    min-width: 35px;
+}
+
+.controls .range-options-wrapper .ratingRange-options .ratingRange-options--right .label-icon {
+    font-size: 10px;
+    margin: 0 5px;
+}
+
+
+.controls .range-options-wrapper .ratingRange-options .ratingRange-options--right .current-option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 3px 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #d9d9d9;
+    border-radius: 2px;
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.controls .range-options-wrapper .ratingRange-options .ratingRange-options--right .current-option:hover {
+    color: #294d6a;
+    border-color: #294d6a;
+}
+
+.controls .range-options-wrapper .ratingRange-options .ratingRange-options--right #checkbox-for-ratingRangeMenu {
+    display: none;
+}
+
+.controls .range-options-wrapper .ratingRange-options .ratingRange-options--right .ratingRange-menu {
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    padding: 10px;
+    border-radius: 2px;
+    box-shadow: 0 3px 6px -4px rgb(0 0 0 / 12%), 0 6px 16px 0 rgb(0 0 0 / 8%), 0 9px 28px 8px rgb(0 0 0 / 5%);
+    z-index: 50;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(15px);
+    transition: all 0.2s ease;
+}
+
+.controls .range-options-wrapper .ratingRange-options .ratingRange-options--right #checkbox-for-ratingRangeMenu:checked ~ .menu-overlay {
+    display: block;
+}
+
+.controls .range-options-wrapper .ratingRange-options .ratingRange-options--right #checkbox-for-ratingRangeMenu:checked ~ .ratingRange-menu {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.controls .range-options-wrapper .ratingRange-options .ratingRange-options--right .ratingRange-menu .ratingRange--from,
+.controls .range-options-wrapper .ratingRange-options .ratingRange-options--right .ratingRange-menu .ratingRange--to {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls .range-options-wrapper .ratingRange-options--right .ratingRange-menu .ratingRange--from {
+    margin-bottom: 5px;
+}
+
+.controls .range-options-wrapper .ratingRange-options--right .ratingRange-menu .ratingRange--to {
+    margin-bottom: 5px;
+}
+
+.controls .range-options-wrapper .ratingRange-options--right .star-icon {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.controls .range-options-wrapper .ratingRange-options--right .ratingRange-menu .input-rating {
+    width: 100%;
+}
+
+.controls .range-options-wrapper .ratingRange-options--right .ratingRange-menu .ratingRange-menu__btns {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.controls .range-options-wrapper .ratingRange-options--right .ratingRange-menu .ratingRange-menu__btn {
+    margin-right: 5px;
+}
+
+.controls .range-options-wrapper .ratingRange-options--right .ratingRange-menu .ratingRange-menu__btn:last-child {
+    margin-right: 0px;
+}
+
+.controls .range-options-wrapper .ratingRange-options--right .ratingRange-menu .ratingRange-menu__btns .submit-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls .range-options-wrapper .ratingRange-options--right .ratingRange-menu .ratingRange-menu__btns .submit-btn .ant-btn-loading-icon {
+    line-height: 0;
+}
+
+
+/* Media query */
+@media (max-width: 992px) {
+    .controls-wrapper .controls .range-options-wrapper {
+        width: 100%;
+        margin-bottom: 10px;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 768px) {
+    .controls-wrapper .controls .range-options-wrapper {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .controls-wrapper .controls .sort-options-wrapper {
+        width: 100%;
+    }
+
+    .controls .range-options-wrapper .priceRange-options {
+        width: 100%;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    .controls .range-options-wrapper .ratingRange-options {
+        width: 100%;
+    }
+}

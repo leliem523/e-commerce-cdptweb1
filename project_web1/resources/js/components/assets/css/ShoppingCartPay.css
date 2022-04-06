@@ -1,0 +1,109 @@
+/* .place-of-delivery: */
+.place-of-delivery {
+    background: white;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.place-of-delivery p {
+    margin: 0;
+    padding: 0;
+}
+
+.place-of-delivery .heading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.place-of-delivery .heading .title-place {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.place-of-delivery .heading .change-button {
+    color: cornflowerblue;
+    cursor: pointer;
+}
+
+.place-of-delivery .heading .change-button:hover {
+    color: aqua;
+}
+
+.place-of-delivery .title {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.place-of-delivery .title p {
+    font-weight: 700;
+    padding-right: 20px;
+}
+
+.place-of-delivery .title .user-name {
+    border-right: 2px solid gray;
+}
+
+.place-of-delivery .title .user-number {
+    padding-left: 20px;
+}
+
+.prices-total {
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.prices-total .total-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.prices-total .total-box .total-title {
+    font-weight: 700;
+    color: red;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+.prices-total .total-box .total-field {
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.place-of-delivery .address .place-of-delivery__content {
+    font-style: italic;
+}
+
+
+/* .shop-location: */
+.shop-location {
+    background: white;
+    padding: 20px;
+}
+
+.shop-location p,
+.shop-location label {
+    margin: 0;
+    padding: 0;
+}
+
+.shop-location .heading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.shop-location .heading .title-place {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.shop-location .heading .change-button {
+    color: cornflowerblue;
+    cursor: pointer;
+}
+
+.shop-location .location .shop-location__content {
+    font-style: italic;
+}

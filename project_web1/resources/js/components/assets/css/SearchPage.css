@@ -1,0 +1,17 @@
+.suggestion-content-wrapper {
+    position: relative;
+}
+
+.suggestion-content-wrapper .suggestion-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.suggestion-content-wrapper .suggestion-content .suggestion-content__icon {
+    line-height: 0;
+}
+
+.search-page .body-section {
+    margin-top: 30px;
+}

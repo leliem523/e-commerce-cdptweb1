@@ -1,0 +1,172 @@
+/* .list-of-products */
+.product-suggestion {
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 20px 0;
+  }
+
+  .header-product-suggestion {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.251);
+  }
+
+
+  .header-product-suggestion p {
+    cursor: pointer;
+    margin: 0;
+  }
+
+  .header-product-suggestion h3 {
+    margin: 0;
+  }
+  
+  .header-product-suggestion p:hover {
+    color: tomato;
+  }
+
+  .product-suggestion .body .product-quick-info {
+    background: #fff;
+    padding: 20px 10px;
+    max-width: 250px;
+  }
+  
+  .product-suggestion .body .product-quick-info:hover {
+    box-shadow: 0px 0px 5px 2px rgba(136, 136, 136, 0.5);
+    z-index: 1;
+    position: relative;
+  }
+  
+  .product-suggestion .body .product-quick-info .product-img-wrapper .product-img {
+      width: 100%;
+      height: auto;
+  }
+  
+  .product-suggestion .body .product-quick-info .product-quick-info-name {
+    cursor: pointer;
+    text-decoration: none;
+    padding: 5px 0;
+    color: #000;
+    font-size: 15px;
+    /* Limit text length and lines: */
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 1.8;
+  }
+  
+  .product-suggestion .body .product-quick-info .product-quick-info-name:hover {
+    color: #294d6a;
+    text-decoration: underline;
+  }
+  
+  .product-suggestion .body .product-quick-info .product-quick-info-name .hidden-div {
+    opacity: 0;
+  }
+  
+  .product-suggestion .body .product-quick-info .product-quick-info-price {
+    font-size: 18px;
+    font-weight: 500;
+    color: #cc0018;
+    margin-bottom: 5px;
+  }
+  
+  .product-suggestion .body .buy-btn {
+    display: inline-block;
+    width: 100%;
+    padding: 5px 0;
+    background-color: transparent;
+    border: 1px solid #294d6a;
+    color: #294d6a;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .product-suggestion .body .buy-btn:hover {
+    background-color: #294d6a;
+    color: #fff;
+  }
+  
+  .product-suggestion .body .list-title {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #294d6a;
+    font-weight: bold;
+    font-size: 18px;
+    border-left: 5px solid #294d6a;
+    padding: 0 15px;
+  }
+
+  
+  
+ .product-suggestion .body .ant-carousel .slick-prev,
+ .product-suggestion .body .ant-carousel .slick-next,
+ .product-suggestion .body .ant-carousel .slick-prev:hover,
+ .product-suggestion .body .ant-carousel .slick-next:hover,
+ .product-suggestion .body .ant-carousel .slick-prev:focus,
+ .product-suggestion .body .ant-carousel .slick-next:focus {
+    background-color: rgba(85, 85, 85, 0.3);
+    color: #fff;
+    margin: 0;
+    padding: 5px;
+    width: auto;
+    height: 50px;
+    font-size: 0;
+    text-align: center;
+    z-index: 50;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+ .product-suggestion .body .ant-carousel .slick-prev {
+    left: 0;
+    border-radius: 0 10px 10px 0;
+}
+
+ .product-suggestion .body .ant-carousel .slick-next {
+    right: 0;
+    border-radius: 10px 0 0 10px;
+}
+
+ .product-suggestion .body .ant-carousel .slick-next::before {
+    content: ">";
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ .product-suggestion .body .ant-carousel .slick-prev::before {
+    content: "<";
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ .product-suggestion .body:hover .ant-carousel .slick-prev,
+ .product-suggestion .body:hover .ant-carousel .slick-next,
+ .product-suggestion .body:hover .ant-carousel .slick-prev:hover,
+ .product-suggestion .body:hover .ant-carousel .slick-next:hover,
+ .product-suggestion .body:hover .ant-carousel .slick-prev:focus,
+ .product-suggestion .body:hover .ant-carousel .slick-next:focus {
+    background-color: rgba(85, 85, 85, 0.5);
+    padding: 5px 10px;
+}
+  
+
+
+@media screen and (max-width: 579px) {
+  .product-suggestion { 
+    display: none;
+  }
+}
+  

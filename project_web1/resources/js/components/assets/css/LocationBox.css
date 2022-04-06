@@ -1,0 +1,202 @@
+.location-box-wrapper {
+    margin: 0 10px 0 0;
+    position: relative;
+    user-select: none;
+}
+
+.location-box-wrapper .location-list-wrapper {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: calc((50px - 40px) / 2);
+    background-color: #fff;
+    border-radius: 0;
+    z-index: 100;
+    width: 300px;
+    max-width: 300px;
+    height: auto
+}
+
+.location-box-wrapper #checkbox-for-LocationList[type="checkbox"] {
+    display: none;
+}
+
+.location-box-wrapper .location-btn {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    padding: 5px;
+    color: #fff;
+    font-size: 12px;
+    background-color: #1b3245;
+    border-radius: 5px;
+    height: auto;
+    cursor: pointer;
+    position: relative;
+    width: 180px;
+    max-width: 180px;
+    min-height: 40px;
+}
+
+.location-box-wrapper .location-btn .location-btn__icon {
+    margin-right: 8px;
+}
+
+.location-box-wrapper .location-btn .location-btn__title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-size: 10px;
+}
+
+.location-box-wrapper .location-btn .location-btn__icon .location_img {
+    width: 18px;
+    max-width: 25px;
+    height: auto;
+}
+
+.location-box-wrapper #checkbox-for-LocationList[type="checkbox"]:checked ~ .location-btn {
+    box-shadow: 0px 0px 5px 0px #eee;
+    z-index: 100;
+}
+
+.location-box-wrapper #checkbox-for-LocationList[type="checkbox"]:checked ~ .menu-overlay--dark {
+    display: block;
+}
+
+.location-box-wrapper #checkbox-for-LocationList[type="checkbox"]:checked ~ .location-list-wrapper {
+    display: block;
+}
+
+
+/* Location list: */
+.location-box-wrapper .location-list-wrapper .location-list__title {
+    padding: 10px 0;
+    text-align: center;
+    background-color: #294d6a;
+    color: #fff;
+    position: relative;
+}
+
+.location-box-wrapper .location-list-wrapper .location-list__title .top-heading {
+    padding: 0 50px;
+}
+
+.location-box-wrapper .location-list-wrapper .location-list__title .bottom-heading {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    padding: 0 50px;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.location-box-wrapper .location-list-wrapper .location-list__title .goback-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.location-box-wrapper .location-list-wrapper .location-list__title .close-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.location-box-wrapper .location-list-wrapper .location-list__title .close-btn .icon {
+    font-size: 18px;
+    color: #fff;
+}
+
+.location-box-wrapper .location-list-wrapper .location-list__lists {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.location-box-wrapper .location-list-wrapper .locations {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    max-height: 350px;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.location-box-wrapper .location-list-wrapper .locations::-webkit-scrollbar { 
+    width: 3px;
+}
+
+.location-box-wrapper .location-list-wrapper .locations::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #888; 
+    border-radius: 5px;
+}
+
+.location-box-wrapper .location-list-wrapper .locations::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 5px;
+}
+
+.location-box-wrapper .location-list-wrapper .locations .location-item {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+.location-box-wrapper .location-list-wrapper .locations .location-item:hover {
+    background-color: rgba(41, 77, 106, 0.1);
+}
+
+.location-box-wrapper .location-list-wrapper .locations .location-item.active {
+    background-color: rgba(41, 77, 106, 0.3);
+}
+
+
+/* __________________________________________________ */
+@media screen and (max-width: 768px) {
+    .location-box-wrapper .location-btn {
+        width: auto;
+        padding: 0 8px;
+        height: 30px;
+        min-height: 30px;
+    }
+
+    .location-box-wrapper .location-btn .location-btn__icon {
+        margin-right: 0;
+    }
+
+    .location-box-wrapper .location-btn .location-btn__title {
+        display: none;
+    }
+
+    .location-box-wrapper .location-btn .location-btn__icon .location_img {
+        width: 15px;
+    }
+
+    .location-box-wrapper #checkbox-for-LocationList[type="checkbox"]:checked ~ .location-list-wrapper {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

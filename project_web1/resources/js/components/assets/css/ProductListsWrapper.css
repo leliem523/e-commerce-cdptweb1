@@ -1,0 +1,11 @@
+.productLists-wrapper .p-list {
+    margin-bottom: 30px;
+}
+
+.productLists-wrapper .p-list.last-p-list {
+    margin-bottom: 0px;
+}
+
+.productLists-wrapper .p-list .list-of-products .products {
+    /* min-height: 665.31px; */
+}

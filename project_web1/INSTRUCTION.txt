@@ -1,0 +1,14 @@
+npm install antd
+npm install react-router-dom
+npm install moment
+npm install react-id-generator
+npm install sweetalert
+npm install yup
+npm install formik
+npm install axios
+
+npm install redux
+npm install react-redux
+npm install @reduxjs/toolkit
+
+composer require doctrine/dbal

@@ -1,0 +1,9 @@
+.product-list-page .body-section {
+    margin-top: 30px;
+}
+
+.product-list-page .list-of-products .ant-pagination-item-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
